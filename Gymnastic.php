@@ -1,18 +1,13 @@
 <?php
 class Gymnastic extends Handstand
 {
-    private $owner;
-    public function __construct($body, $focus)
+    public function __construct()
     {
-        parent:: __construct($body, $focus);
+        parent:: __construct('straight', 'strength', 'gymnastic');
     }
-    public function set_owner($owner)
+    protected function get_image()
     {
-        $this->owner = $owner;
-    }
-    public function get_owner()
-    {
-        return $this->owner;
+        return 'gymnastic.jpg';
     }
 }
 ?>

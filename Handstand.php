@@ -3,10 +3,12 @@ class Handstand
 {
     private $body;
     private $focus;
-    public function __construct($body, $focus)
+    private $type;
+    public function __construct($body, $focus, $type)
     {
         $this->body = $body;
         $this->focus = $focus;
+        $this->type = $type;
     }
     public function get_body()
     {
@@ -23,6 +25,10 @@ class Handstand
     public function set_focus()
     {
         $this->focus = $focus;
+    }
+    public function get_image_tag()
+    {
+        return "<img src='" . $this->get_image() . "' alt='" . $this->type . " handstand' />";
     }
 }
 ?>

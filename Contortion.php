@@ -1,10 +1,13 @@
 <?php
 class Contortion extends Handstand
 {
-    private $owner;
-    public function __construct($body, $focus)
+    public function __construct()
     {
-        parent:: __construct($body, $focus);
+        parent:: __construct('curved', 'flexibility', 'contortion');
+    }
+    protected function get_image()
+    {
+        return 'contortion.jpg';
     }
 }
 ?>
