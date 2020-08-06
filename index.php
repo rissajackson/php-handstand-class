@@ -13,12 +13,12 @@ require_once('Gymnastic.php');
 require_once('Contortion.php');
 $gymnastic = new Gymnastic('straight', 'strength');
 $contortion = new Contortion('curved', 'flexibility');
-echo '<b>  Gymnastic Handstand</b> <br>';
-echo "<img src='gymnastic.jpg' alt='gymnastic handstand' /> <br>"; 
-echo '  The gymnastic handstand shape is <strong>' . $gymnastic->get_body() . '</strong> and the focus is on <strong>' . $gymnastic->get_focus() . '</strong>.' . '<br><br>';
-echo '<b>  Contortion Handstand</b> <br>';
-echo "<img src='contortion.jpg' alt='contortion handstand ' /> <br>"; 
-echo '  The contortion handstand shape is <strong>' . $contortion->get_body() . '</strong> and the focus is on <strong>' . $contortion->get_focus() . '</strong>.';
+echo '<p><b>Gymnastic Handstand</b> <br></p>';
+echo "<p><img src='gymnastic.jpg' alt='gymnastic handstand' /></p> <br>"; 
+echo '<p>The gymnastic handstand shape is <strong>' . $gymnastic->get_body() . '</strong> and the focus is on <strong>' . $gymnastic->get_focus() . '</strong>.' . '</p><br><br>';
+echo '<p><b>Contortion Handstand</p></b> <br>';
+echo "<p><img src='contortion.jpg' alt='contortion handstand ' /></p> <br>"; 
+echo '<p>The contortion handstand shape is <strong>' . $contortion->get_body() . '</strong> and the focus is on <strong>' . $contortion->get_focus() . '</strong>.</p>';
 ?>
 
 </body> 
