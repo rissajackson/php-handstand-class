@@ -28,7 +28,7 @@ class Handstand
     }
     public function get_image_tag()
     {
-        return "<img src='" . $this->get_image() . "' alt='" . $this->type . " handstand' />";
+        return "<img class='handstand' src='" . $this->get_image() . "' alt='" . $this->type . " handstand' />";
     }
 }
 ?>
